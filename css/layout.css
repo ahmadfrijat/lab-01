@@ -1,5 +1,84 @@
+div,footer,aside,header {
+    border: 1px solid black;
+    background-color: rgb(80, 121, 80);
+    width: 100%;
+}
+header {
+    height: 75px;
+}
+aside {
+    height: 150px;
+}
+.c, .d {
+    height: 125px;
+}
+.e, .f, .g, .h {
+    width: 50%;
+    height: 250px;
+}
+footer {
+    height: 80px;
+}
 
-#b{
+@media(min-width: 768px) {
+    div,footer,aside,header  {
+        background-color: rgb(54, 92, 133)
+    }
+    header {
+        height: 100px;
+        grid-column: 1 / 6;
+    }
+    aside {
+        height: 600px;
+        grid-column: 1 / 2;
+    }
+    .c {
+        height: 200px;
+        grid-column: 2 / 4;
+    }
+    .d {
+        height: 200px;
+        grid-column: 4 / 6;  
+    }
+    .e {
+        height: 250px;
+        width: 100%;
+        grid-column-start: 2;
+    }
+    .f {
+        height: 250px;
+        width: 100%;
+        grid-column: 3 / 4;
+    }
+    .g {
+        height: 250px;
+        width: 100%;
+        grid-column: 4 / 5;
+    }
+    .h {
+        height: 250px;
+        width: 100%;
+        grid-column: 5 / 6;
+    }
+    footer {
+        height: 150px;
+        width: 100%;
+        grid-column: 2 / 6;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 480px)  {
+    div,footer,aside,header {
+        border: 1px solid black;
+        background-color: brown;
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* #b{
     display:box;
     width:480px;
     height:150px;
@@ -8,6 +87,7 @@
     box-sizing: border-box;
     text-align: center;
     line-height:150px;
+    width: 100%;
 }
 #c{
     display:box;
@@ -18,7 +98,7 @@
     box-sizing: border-box;
     text-align: center;
     line-height:125px;
-
+    width: 100%;
 }
 #d{
     display:box;
@@ -29,5 +109,6 @@
     box-sizing: border-box;
     text-align: center;
     line-height:125px;
+    width: 100%;
 
-}
+} */
